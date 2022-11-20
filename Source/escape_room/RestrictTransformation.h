@@ -22,6 +22,11 @@ public:
 	FVector locationMin;
 	UPROPERTY(EditAnywhere)
 	FVector locationMax;
+
+	UPROPERTY(EditAnywhere)
+	FRotator rotationMin;
+	UPROPERTY(EditAnywhere)
+	FRotator rotationMax;
 	
 	FRotator rotation;
 	FVector scale;

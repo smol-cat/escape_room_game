@@ -24,7 +24,7 @@ void UOnVelocity::BeginPlay()
 {
 	Super::BeginPlay();
 	velocityComponent = GetOwner()->FindComponentByClass<UVelocity>();
-	
+
 }
 
 
@@ -33,16 +33,24 @@ void UOnVelocity::TickComponent(float DeltaTime, ELevelTick TickType, FActorComp
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
+	TArray<AActor*> overlappingActors;
+	this->GetOwner()->GetOverlappingActors(overlappingActors);
+	int i = 0;
+	for (auto OverlappingActor : overlappingActors)
+	{
+		i++;
+		FString msg(((TEXT("Overlapping object %s"), OverlappingActor->GetFName().ToString())));
+		GEngine->AddOnScreenDebugMessage(i, 1.0f, FColor::Red, msg);
+	}
+
 	if (velocityComponent != nullptr && sound != nullptr && velocityComponent->speed >= invokingMinimum) {
-		//UGameplayStatics::PlaySound2D(this, sound);
-		
+		UGameplayStatics::PlaySound2D(this, sound);
+
 		auto* s = GetWorld()->SpawnActor<AActor>(spawnee, this->GetOwner()->GetActorLocation(), this->GetOwner()->GetActorRotation());
-		for (auto child : this->GetOwner()->Children)
-		{
-			GetWorld()->DestroyActor(child);
-		}
+		TArray<AActor*> children;
+		this->GetOwner()->GetWorld()->DestroyActor(keyActor);
 		GetWorld()->DestroyActor(this->GetOwner());
-		
+
 		FString msg = FString::Printf(TEXT("OnVelocity::SpeedInvoke: %s"), *FString::SanitizeFloat(velocityComponent->speed));
 		GEngine->AddOnScreenDebugMessage(1, 0.0f, FColor::Red, msg);
 	}

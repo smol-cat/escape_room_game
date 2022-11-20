@@ -25,6 +25,8 @@ public:
 		USoundBase* sound = nullptr;
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<class AActor> spawnee;
+	UPROPERTY(EditAnywhere)
+	AActor* keyActor;
 
 protected:
 	// Called when the game starts

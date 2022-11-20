@@ -17,7 +17,7 @@ void UVelocity::BeginPlay()
 {
 	Super::BeginPlay();
 	auto location = this->GetOwner()->GetActorLocation();
-	timeVectorArray.Init({ FDateTime::Now(), location}, queueCapacity);
+	timeVectorArray.Init({FDateTime::Now(), location}, queueCapacity);
 	index = 0;
 }
 
@@ -27,28 +27,34 @@ void UVelocity::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	double totalDistance = 0.0;
-	
-	auto previous = timeVectorArray[index];
-	auto startTime = previous.Key;
+	if (initFull == queueCapacity)
+	{
+		double totalDistance = 0.0;
 
-	for (int i = (index + 1) % queueCapacity; i != index; i = (i + 1) % queueCapacity) {
-		
-		auto current = timeVectorArray[i];
-		auto distance = FVector::Dist(current.Value, previous.Value);
-		totalDistance += distance;
-		previous = current;
+		auto previous = timeVectorArray[index];
+		auto startTime = previous.Key;
+
+		for (int i = (index + 1) % queueCapacity; i != index; i = (i + 1) % queueCapacity)
+		{
+			auto current = timeVectorArray[i];
+			auto distance = FVector::Dist(current.Value, previous.Value);
+			totalDistance += distance;
+			previous = current;
+		}
+
+		auto endTime = previous.Key;
+		auto timeSpan = endTime - startTime;
+
+		double duration = timeSpan.GetTotalSeconds();
+
+		speed = totalDistance / duration;
+	}
+	else
+	{
+		initFull++;
 	}
 
-	auto endTime = previous.Key;
-	auto timeSpan = endTime - startTime;
-
-	double duration = timeSpan.GetTotalSeconds();
-	
-	speed = totalDistance / duration;
-
 	auto location = this->GetOwner()->GetActorLocation();
-	timeVectorArray[index] = { FDateTime::Now(), location };
+	timeVectorArray[index] = {FDateTime::Now(), location};
 	index = (index + 1) % queueCapacity;
 }
-

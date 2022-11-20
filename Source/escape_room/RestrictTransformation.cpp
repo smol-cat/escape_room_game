@@ -32,17 +32,17 @@ void URestrictTransformation::TickComponent(float DeltaTime, ELevelTick TickType
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	// auto currentLocation = GetOwner()->GetActorLocation();
-	// if(currentLocation.X > locationMax.X) currentLocation.X = locationMax.X;
-	// else if(currentLocation.X < locationMin.X) currentLocation.X = locationMin.X;
-	// if(currentLocation.Y > locationMax.Y) currentLocation.Y = locationMax.Y;
-	// else if(currentLocation.Y < locationMin.Y) currentLocation.Y = locationMin.Y;
-	// if(currentLocation.Z > locationMax.Z) currentLocation.Z = locationMax.Z;
-	// else if(currentLocation.Z < locationMin.Z) currentLocation.Z = locationMin.Z;
-
+	auto currentRotation = GetOwner()->GetActorRotation();
+	if(currentRotation.Pitch > rotationMax.Pitch) currentRotation.Pitch = rotationMax.Pitch;
+	else if(currentRotation.Pitch < rotationMin.Pitch) currentRotation.Pitch = rotationMin.Pitch;
+	if(currentRotation.Yaw > rotationMax.Yaw) currentRotation.Yaw = rotationMax.Yaw;
+	else if(currentRotation.Yaw < rotationMin.Yaw) currentRotation.Yaw = rotationMin.Yaw;
+	if(currentRotation.Roll > rotationMax.Roll) currentRotation.Roll = rotationMax.Roll;
+	else if(currentRotation.Roll < rotationMin.Roll) currentRotation.Roll = rotationMin.Roll;
 	
 	GetOwner()->SetActorLocation(ClampVector(GetOwner()->GetActorLocation(), locationMin, locationMax));
-	this->GetOwner()->SetActorRotation(rotation);
+	GetOwner()->SetActorRotation(currentRotation);
+	// this->GetOwner()->SetActorRotation(rotation);
 	// this->GetOwner()->SetActorScale3D(scale);
 }
 

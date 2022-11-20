@@ -24,6 +24,8 @@ public:
 	UPROPERTY(VisibleAnywhere)
 		double speed = 0.0;
 
+	uint32 initFull = 0;
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
