@@ -1,0 +1,14 @@
+{
+	"configurations": [
+		{
+			"name": "escape_roomEditor Editor Linux Development (escape_room)",
+			"intelliSenseMode": "clang-x64",
+			"compileCommands": "/home/smol_cat/git/escape_room_game/.vscode/compileCommands_escape_room.json"
+		},
+		{
+			"name": "Linux",
+			"intelliSenseMode": "clang-x64",
+			"compileCommands": "/home/smol_cat/git/escape_room_game/.vscode/compileCommands_Default.json"
+		}
+	]
+}

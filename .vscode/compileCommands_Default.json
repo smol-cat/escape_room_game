@@ -1,0 +1,67 @@
+[
+	{
+		"file": "/home/smol_cat/git/escape_room_game/Source/escape_room/escape_room.Build.cs",
+		"command": "/opt/unreal-engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/smol_cat/git/escape_room_game/.vscode/compileCommands_Default/escape_room.223.rsp",
+		"directory": "/opt/unreal-engine/Engine/Source"
+	},
+	{
+		"file": "/home/smol_cat/git/escape_room_game/Source/escape_room/escape_room.cpp",
+		"command": "/opt/unreal-engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/smol_cat/git/escape_room_game/.vscode/compileCommands_Default/escape_room.223.rsp",
+		"directory": "/opt/unreal-engine/Engine/Source"
+	},
+	{
+		"file": "/home/smol_cat/git/escape_room_game/Source/escape_room/escape_room.h",
+		"command": "/opt/unreal-engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/smol_cat/git/escape_room_game/.vscode/compileCommands_Default/escape_room.223.rsp",
+		"directory": "/opt/unreal-engine/Engine/Source"
+	},
+	{
+		"file": "/home/smol_cat/git/escape_room_game/Source/escape_room/escape_roomCharacter.cpp",
+		"command": "/opt/unreal-engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/smol_cat/git/escape_room_game/.vscode/compileCommands_Default/escape_room.223.rsp",
+		"directory": "/opt/unreal-engine/Engine/Source"
+	},
+	{
+		"file": "/home/smol_cat/git/escape_room_game/Source/escape_room/escape_roomCharacter.h",
+		"command": "/opt/unreal-engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/smol_cat/git/escape_room_game/.vscode/compileCommands_Default/escape_room.223.rsp",
+		"directory": "/opt/unreal-engine/Engine/Source"
+	},
+	{
+		"file": "/home/smol_cat/git/escape_room_game/Source/escape_room/escape_roomGameMode.cpp",
+		"command": "/opt/unreal-engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/smol_cat/git/escape_room_game/.vscode/compileCommands_Default/escape_room.223.rsp",
+		"directory": "/opt/unreal-engine/Engine/Source"
+	},
+	{
+		"file": "/home/smol_cat/git/escape_room_game/Source/escape_room/escape_roomGameMode.h",
+		"command": "/opt/unreal-engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/smol_cat/git/escape_room_game/.vscode/compileCommands_Default/escape_room.223.rsp",
+		"directory": "/opt/unreal-engine/Engine/Source"
+	},
+	{
+		"file": "/home/smol_cat/git/escape_room_game/Source/escape_room/escape_roomProjectile.cpp",
+		"command": "/opt/unreal-engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/smol_cat/git/escape_room_game/.vscode/compileCommands_Default/escape_room.223.rsp",
+		"directory": "/opt/unreal-engine/Engine/Source"
+	},
+	{
+		"file": "/home/smol_cat/git/escape_room_game/Source/escape_room/escape_roomProjectile.h",
+		"command": "/opt/unreal-engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/smol_cat/git/escape_room_game/.vscode/compileCommands_Default/escape_room.223.rsp",
+		"directory": "/opt/unreal-engine/Engine/Source"
+	},
+	{
+		"file": "/home/smol_cat/git/escape_room_game/Source/escape_room/TP_PickUpComponent.cpp",
+		"command": "/opt/unreal-engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/smol_cat/git/escape_room_game/.vscode/compileCommands_Default/escape_room.223.rsp",
+		"directory": "/opt/unreal-engine/Engine/Source"
+	},
+	{
+		"file": "/home/smol_cat/git/escape_room_game/Source/escape_room/TP_PickUpComponent.h",
+		"command": "/opt/unreal-engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/smol_cat/git/escape_room_game/.vscode/compileCommands_Default/escape_room.223.rsp",
+		"directory": "/opt/unreal-engine/Engine/Source"
+	},
+	{
+		"file": "/home/smol_cat/git/escape_room_game/Source/escape_room/TP_WeaponComponent.cpp",
+		"command": "/opt/unreal-engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/smol_cat/git/escape_room_game/.vscode/compileCommands_Default/escape_room.223.rsp",
+		"directory": "/opt/unreal-engine/Engine/Source"
+	},
+	{
+		"file": "/home/smol_cat/git/escape_room_game/Source/escape_room/TP_WeaponComponent.h",
+		"command": "/opt/unreal-engine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++ @/home/smol_cat/git/escape_room_game/.vscode/compileCommands_Default/escape_room.223.rsp",
+		"directory": "/opt/unreal-engine/Engine/Source"
+	}
+]

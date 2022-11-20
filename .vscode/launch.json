@@ -1,0 +1,145 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch escape_room (Debug)",
+			"request": "launch",
+			"program": "/home/smol_cat/git/escape_room_game/Binaries/Linux/UnrealGame-Linux-Debug",
+			"preLaunchTask": "escape_room Linux Debug Build",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "cppdbg",
+			"visualizerFile": "/opt/unreal-engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true,
+			"sourceFileMap": {
+				"/home/smol_cat/.cache/yay/unreal-engine/src/unreal-engine": "/opt/unreal-engine"
+			}
+		},
+		{
+			"name": "Launch escape_room (DebugGame)",
+			"request": "launch",
+			"program": "/home/smol_cat/git/escape_room_game/Binaries/Linux/UnrealGame-Linux-DebugGame",
+			"preLaunchTask": "escape_room Linux DebugGame Build",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "cppdbg",
+			"visualizerFile": "/opt/unreal-engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true,
+			"sourceFileMap": {
+				"/home/smol_cat/.cache/yay/unreal-engine/src/unreal-engine": "/opt/unreal-engine"
+			}
+		},
+		{
+			"name": "Launch escape_room (Development)",
+			"request": "launch",
+			"program": "/home/smol_cat/git/escape_room_game/Binaries/Linux/UnrealGame",
+			"preLaunchTask": "escape_room Linux Development Build",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "cppdbg",
+			"visualizerFile": "/opt/unreal-engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true,
+			"sourceFileMap": {
+				"/home/smol_cat/.cache/yay/unreal-engine/src/unreal-engine": "/opt/unreal-engine"
+			}
+		},
+		{
+			"name": "Launch escape_room (Test)",
+			"request": "launch",
+			"program": "/home/smol_cat/git/escape_room_game/Binaries/Linux/UnrealGame-Linux-Test",
+			"preLaunchTask": "escape_room Linux Test Build",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "cppdbg",
+			"visualizerFile": "/opt/unreal-engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true,
+			"sourceFileMap": {
+				"/home/smol_cat/.cache/yay/unreal-engine/src/unreal-engine": "/opt/unreal-engine"
+			}
+		},
+		{
+			"name": "Launch escape_room (Shipping)",
+			"request": "launch",
+			"program": "/home/smol_cat/git/escape_room_game/Binaries/Linux/UnrealGame-Linux-Shipping",
+			"preLaunchTask": "escape_room Linux Shipping Build",
+			"args": [
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "cppdbg",
+			"visualizerFile": "/opt/unreal-engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true,
+			"sourceFileMap": {
+				"/home/smol_cat/.cache/yay/unreal-engine/src/unreal-engine": "/opt/unreal-engine"
+			}
+		},
+		{
+			"name": "Launch escape_roomEditor (Debug)",
+			"request": "launch",
+			"program": "/opt/unreal-engine/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+			"preLaunchTask": "escape_roomEditor Linux Debug Build",
+			"args": [
+				"/home/smol_cat/git/escape_room_game/escape_room.uproject"
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "cppdbg",
+			"visualizerFile": "/opt/unreal-engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true,
+			"sourceFileMap": {
+				"/home/smol_cat/.cache/yay/unreal-engine/src/unreal-engine": "/opt/unreal-engine"
+			}
+		},
+		{
+			"name": "Launch escape_roomEditor (DebugGame)",
+			"request": "launch",
+			"program": "/opt/unreal-engine/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+			"preLaunchTask": "escape_roomEditor Linux DebugGame Build",
+			"args": [
+				"/home/smol_cat/git/escape_room_game/escape_room.uproject"
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "cppdbg",
+			"visualizerFile": "/opt/unreal-engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true,
+			"sourceFileMap": {
+				"/home/smol_cat/.cache/yay/unreal-engine/src/unreal-engine": "/opt/unreal-engine"
+			}
+		},
+		{
+			"name": "Launch escape_roomEditor (Development)",
+			"request": "launch",
+			"program": "/opt/unreal-engine/Engine/Binaries/Linux/UnrealEditor",
+			"preLaunchTask": "escape_roomEditor Linux Development Build",
+			"args": [
+				"/home/smol_cat/git/escape_room_game/escape_room.uproject"
+			],
+			"cwd": "/opt/unreal-engine",
+			"type": "cppdbg",
+			"visualizerFile": "/opt/unreal-engine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true,
+			"sourceFileMap": {
+				"/home/smol_cat/.cache/yay/unreal-engine/src/unreal-engine": "/opt/unreal-engine"
+			}
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "/opt/unreal-engine/Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=/home/smol_cat/git/escape_room_game/escape_room.uproject",
+				"-game",
+				"-engine"
+			],
+			"console": "internalConsole",
+			"internalConsoleOptions": "openOnSessionStart",
+			"stopAtEntry": false,
+			"cwd": "/opt/unreal-engine"
+		}
+	]
+}
