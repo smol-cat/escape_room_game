@@ -58,3 +58,8 @@ void UVelocity::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompon
 	timeVectorArray[index] = {FDateTime::Now(), location};
 	index = (index + 1) % queueCapacity;
 }
+
+float UVelocity::GetSpeed()
+{
+	return speed;
+}

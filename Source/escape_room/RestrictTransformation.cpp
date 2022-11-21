@@ -24,6 +24,9 @@ void URestrictTransformation::BeginPlay()
 
 	locationMin += location;
 	locationMax += location;
+
+	rotationMin += rotation;
+	rotationMax += rotation;
 }
 
 
@@ -42,6 +45,7 @@ void URestrictTransformation::TickComponent(float DeltaTime, ELevelTick TickType
 	
 	GetOwner()->SetActorLocation(ClampVector(GetOwner()->GetActorLocation(), locationMin, locationMax));
 	GetOwner()->SetActorRotation(currentRotation);
+	
 	// this->GetOwner()->SetActorRotation(rotation);
 	// this->GetOwner()->SetActorScale3D(scale);
 }
